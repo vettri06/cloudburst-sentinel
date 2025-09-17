@@ -14,7 +14,6 @@ const Navigation = ({ activeSection, onSectionChange }: NavigationProps) => {
   const sections = [
     { id: "dashboard", label: "Dashboard", icon: Cloud },
     { id: "forecasting", label: "Forecasting", icon: TrendingUp },
-    { id: "predictions", label: "Predictions", icon: TrendingUp },
     { id: "alerts", label: "Alert System", icon: AlertTriangle },
     { id: "regional", label: "Regional Weather", icon: MapPin },
   ];

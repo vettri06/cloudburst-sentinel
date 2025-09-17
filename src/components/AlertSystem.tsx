@@ -16,11 +16,11 @@ const AlertSystem = () => {
       id: 1,
       level: "High",
       type: "Cloudburst Warning",
-      location: "Mumbai Central",
+      location: "Shimla Central",
       time: "2 hours",
       confidence: 94,
       description: "Severe cloudburst conditions predicted with >100mm/hour rainfall",
-      coordinates: "19.0176° N, 72.8562° E"
+      coordinates: "31.1048° N, 77.1734° E"
     },
     {
       id: 2,
@@ -47,19 +47,19 @@ const AlertSystem = () => {
   const alertHistory = [
     {
       time: "14:30",
-      location: "Thane",
+      location: "Kullu",
       type: "Resolved",
       description: "Cloudburst warning cleared - conditions normalized"
     },
     {
       time: "12:45",
-      location: "Navi Mumbai",
+      location: "Manali",
       type: "Issued",
       description: "Heavy rainfall alert activated"
     },
     {
       time: "11:20",
-      location: "Kalyan",
+      location: "Dharamshala",
       type: "Updated",
       description: "Alert level upgraded to high risk"
     }

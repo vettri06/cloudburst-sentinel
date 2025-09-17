@@ -12,7 +12,7 @@ const WeatherDashboard = () => {
     pressure: 1013,
     cloudCover: 65,
     conditions: "Partly Cloudy",
-    location: "Mumbai, India"
+    location: "Shimla, Himachal Pradesh"
   };
 
   const hourlyForecast = [

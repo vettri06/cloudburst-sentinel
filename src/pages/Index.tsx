@@ -1,7 +1,6 @@
 import { useState } from "react";
 import Navigation from "@/components/Navigation";
 import WeatherDashboard from "@/components/WeatherDashboard";
-import PredictionModels from "@/components/PredictionModels";
 import AlertSystem from "@/components/AlertSystem";
 import RegionalWeather from "@/components/RegionalWeather";
 import { Card, CardContent } from "@/components/ui/card";
@@ -16,8 +15,6 @@ const Index = () => {
         return <WeatherDashboard />;
       case "forecasting":
         return <WeatherDashboard />;
-      case "predictions":
-        return <PredictionModels />;
       case "alerts":
         return <AlertSystem />;
       case "regional":

@@ -6,10 +6,10 @@ import { MapPin, Thermometer, Droplets, Wind, AlertTriangle, TrendingUp } from "
 import { useState } from "react";
 
 const RegionalWeather = () => {
-  const [selectedRegion, setSelectedRegion] = useState("maharashtra");
+  const [selectedRegion, setSelectedRegion] = useState("himachal");
 
   const regions = [
-    { id: "maharashtra", name: "Maharashtra", zones: 12 },
+    { id: "himachal", name: "Himachal Pradesh", zones: 12 },
     { id: "kerala", name: "Kerala", zones: 8 },
     { id: "karnataka", name: "Karnataka", zones: 10 },
     { id: "tamilnadu", name: "Tamil Nadu", zones: 9 },
@@ -17,12 +17,12 @@ const RegionalWeather = () => {
   ];
 
   const regionalData = {
-    maharashtra: {
+    himachal: {
       zones: [
         {
-          name: "Mumbai Metropolitan",
+          name: "Shimla District",
           status: "High Risk",
-          temperature: 28,
+          temperature: 18,
           humidity: 82,
           windSpeed: 15,
           rainfall: 45,
@@ -30,9 +30,9 @@ const RegionalWeather = () => {
           confidence: 94
         },
         {
-          name: "Pune Division",
+          name: "Kullu-Manali Region",
           status: "Medium Risk",
-          temperature: 26,
+          temperature: 16,
           humidity: 75,
           windSpeed: 12,
           rainfall: 25,
@@ -40,9 +40,9 @@ const RegionalWeather = () => {
           confidence: 87
         },
         {
-          name: "Nashik Region",
+          name: "Dharamshala Division",
           status: "Low Risk",
-          temperature: 29,
+          temperature: 20,
           humidity: 68,
           windSpeed: 8,
           rainfall: 10,
@@ -50,9 +50,9 @@ const RegionalWeather = () => {
           confidence: 72
         },
         {
-          name: "Aurangabad Zone",
+          name: "Mandi Zone",
           status: "Normal",
-          temperature: 31,
+          temperature: 22,
           humidity: 62,
           windSpeed: 6,
           rainfall: 5,
@@ -78,7 +78,7 @@ const RegionalWeather = () => {
     }
   };
 
-  const currentRegionData = regionalData[selectedRegion as keyof typeof regionalData] || regionalData.maharashtra;
+  const currentRegionData = regionalData[selectedRegion as keyof typeof regionalData] || regionalData.himachal;
 
   const overallStats = {
     totalZones: currentRegionData.zones.length,
